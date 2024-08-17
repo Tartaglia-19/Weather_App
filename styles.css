@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #70e1f5, #ffd194);
+    background-size: cover;
+    background-position: center;
+    color: #444;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Adds space between input and buttons */
+}
+
+#city-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 1em;
+}
+
+#search-button, #location-button {
+    padding: 10px 15px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1; /* Makes the buttons equal in width */
+}
+
+#search-button:hover, #location-button:hover {
+    background-color: #ff6347;
+    transform: translateY(-2px); /* Slight hover effect */
+}
+
+.spinner {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.weather-info {
+    display: none;
+    margin-top: 20px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+h2, h3, p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.hourly-forecast {
+    margin-top: 20px;
+}
+
+#hourly-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.hour {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 auto;
+}
+
+.hour img {
+    width: 50px;
+    height: 50px;
+}
+
+.hour p {
+    font-size: 1em;
+    color: #555;
+}
